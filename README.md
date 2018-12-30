@@ -19,3 +19,4 @@ See glmConfig.cmake for an example.
 
 CMake's find_package() command has two modes: Module mode (legacy, using Find modules) 
 and Config mode (preferred, using Package Config files)
+
