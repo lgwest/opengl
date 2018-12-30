@@ -2,8 +2,14 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="Project" targetName="2-5-scale" />
       <config projectName="Project" targetName="2-1-triangle" />
+      <config projectName="Project" targetName="2-7-indexing" />
       <config projectName="Project" targetName="1-beginner" />
+      <config projectName="Project" targetName="2-4-rotate" />
+      <config projectName="Project" targetName="2-9-cleanup" />
+      <config projectName="Project" targetName="2-8-projections" />
+      <config projectName="Project" targetName="2-6-interpolation" />
       <config projectName="Project" targetName="2-2-uniform" />
       <config projectName="Project" targetName="2-3-translate" />
     </generated>
@@ -15,7 +21,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8e72d6f-7217-4299-9704-6f1acf56feda" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-4-rotate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-4-rotate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-5-scale.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-5-scale.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-6-interpolation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-6-interpolation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-7-indexing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-7-indexing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-8-projections.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-8-projections.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Mesh.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-9-cleanup/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-9-cleanup/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-9-cleanup/shaders/shader.frag" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shaders/shader.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-9-cleanup/shaders/shader.vert" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shaders/shader.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -30,57 +50,117 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-5-scale.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2-beginner/2-3-translate.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+            <state relative-caret-position="-632">
+              <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
               <folding>
-                <element signature="e#0#17#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2-beginner/2-4-rotate.cpp">
+        <entry file="file://$PROJECT_DIR$/2-beginner/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+            <state relative-caret-position="405">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Mesh.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Mesh.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-6-interpolation.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#14#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Window.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <element signature="e#14#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2-beginner/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            <state relative-caret-position="15">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>\</replace>
+      <replace>/</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,16 +171,27 @@
         <option value="$PROJECT_DIR$/1-beginner/main.cpp" />
         <option value="$PROJECT_DIR$/2-beginner/triangle.cpp" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/2-beginner/translate.cpp" />
-        <option value="$PROJECT_DIR$/2-beginner/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/2-beginner/uniform.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/2-beginner/translate.cpp" />
+        <option value="$PROJECT_DIR$/2-beginner/uniform.cpp" />
+        <option value="$PROJECT_DIR$/2-beginner/2-4-rotate.cpp" />
+        <option value="$PROJECT_DIR$/2-beginner/2-7-indexing.cpp" />
+        <option value="$PROJECT_DIR$/2-beginner/2-8-projections.cpp" />
+        <option value="$PROJECT_DIR$/2-beginner/2-5-scale.cpp" />
+        <option value="$PROJECT_DIR$/2-beginner/2-6-interpolation.cpp" />
+        <option value="$PROJECT_DIR$/2-beginner/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Mesh.h" />
+        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/main.cpp" />
+        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h" />
+        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Window.h" />
+        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.cpp" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="200" />
-    <option name="y" value="27" />
+    <option name="x" value="434" />
+    <option name="y" value="153" />
     <option name="width" value="1400" />
     <option name="height" value="873" />
   </component>
@@ -122,6 +213,12 @@
               <item name="opengl" type="462c0819:PsiDirectoryNode" />
               <item name="2-beginner" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="opengl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opengl" type="462c0819:PsiDirectoryNode" />
+              <item name="2-beginner" type="462c0819:PsiDirectoryNode" />
+              <item name="2-9-cleanup" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -130,8 +227,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -145,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.2-2-uniform">
+  <component name="RunManager" selected="Application.2-3-translate">
     <configuration name="1-beginner" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1-beginner" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1-beginner">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -166,11 +265,47 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="2-4-rotate" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="2-4-rotate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="2-4-rotate">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="2-5-scale" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="2-5-scale" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="2-5-scale">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="2-6-interpolation" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="2-6-interpolation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="2-6-interpolation">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="2-7-indexing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="2-7-indexing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="2-7-indexing">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="2-8-projections" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="2-8-projections" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="2-8-projections">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="2-9-cleanup" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="2-9-cleanup" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="2-9-cleanup">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.1-beginner" />
       <item itemvalue="Application.2-1-triangle" />
       <item itemvalue="Application.2-2-uniform" />
       <item itemvalue="Application.2-3-translate" />
+      <item itemvalue="Application.2-4-rotate" />
+      <item itemvalue="Application.2-5-scale" />
+      <item itemvalue="Application.2-6-interpolation" />
+      <item itemvalue="Application.2-7-indexing" />
+      <item itemvalue="Application.2-8-projections" />
+      <item itemvalue="Application.2-9-cleanup" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -185,32 +320,34 @@
       <updated>1545824071835</updated>
       <workItem from="1545824073597" duration="192000" />
       <workItem from="1545824333174" duration="9524000" />
-      <workItem from="1546175144746" duration="999000" />
+      <workItem from="1546162375714" duration="3954000" />
+      <workItem from="1546176945716" duration="1875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10715000" />
+    <option name="totallyTimeSpent" value="15545000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="200" y="27" width="1400" height="873" extended-state="0" />
+    <frame x="434" y="153" width="1400" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25553915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2592319" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24327958" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24327958" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32909244" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.32258064" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.3266129" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32707775" />
       <window_info anchor="right" id="LuaJ" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -223,13 +360,13 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/1-beginner/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/2-beginner/uniform.cpp" />
     <entry file="file://$PROJECT_DIR$/2-beginner/translate.cpp" />
     <entry file="file://$PROJECT_DIR$/2-beginner/triangle.cpp" />
-    <entry file="file://$PROJECT_DIR$/2-beginner/uniform.cpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -243,10 +380,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-2-uniform.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2-beginner/2-3-translate.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+        <state>
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -255,15 +401,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2-beginner/2-4-rotate.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        <state relative-caret-position="195">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-7-indexing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-8-projections.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-5-scale.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-632">
+          <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-6-interpolation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/shaders/shader.frag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/shaders/shader.vert">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2-beginner/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        <state relative-caret-position="405">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Mesh.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Mesh.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Window.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>

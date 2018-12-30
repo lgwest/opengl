@@ -21,5 +21,7 @@ message("OPENGL_LIBRARIES is ${OPENGL_LIBRARIES}")
 find_package(glm REQUIRED)
 message("glm_INCLUDE_DIRS")
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 add_subdirectory(1-introduction)
 add_subdirectory(2-beginner)

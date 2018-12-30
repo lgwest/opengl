@@ -7,23 +7,22 @@ ${GLWF_INCLUDE_DIRS}
 ${GLM_INCLUDE_DIRS}
 )
 
-add_executable(2-1-triangle 2-1-triangle.cpp)
-target_link_libraries(2-1-triangle
-${OPENGL_LIBRARIES} 
-${GLEW_LIBRARIES} 
-${GLFW_LIBRARIES}
-)
+macro(add_myexe binName)
+    add_executable(${binName} ${binName}.cpp)
+    target_link_libraries(${binName}
+            ${OPENGL_LIBRARIES}
+            ${GLEW_LIBRARIES}
+            ${GLFW_LIBRARIES}
+            )
 
-add_executable(2-2-uniform 2-2-uniform.cpp)
-target_link_libraries(2-2-uniform
-${OPENGL_LIBRARIES}
-${GLEW_LIBRARIES}
-${GLFW_LIBRARIES}
-)
+endmacro()
 
-add_executable(2-3-translate 2-3-translate.cpp)
-target_link_libraries(2-3-translate
-${OPENGL_LIBRARIES}
-${GLEW_LIBRARIES}
-${GLFW_LIBRARIES}
-)
+add_myexe(2-1-triangle)
+add_myexe(2-2-uniform)
+add_myexe(2-3-translate)
+add_myexe(2-4-rotate)
+add_myexe(2-5-scale)
+add_myexe(2-6-interpolation)
+add_myexe(2-7-indexing)
+add_myexe(2-8-projections)
+add_subdirectory(2-9-cleanup)

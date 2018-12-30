@@ -2,12 +2,12 @@
 #include <string.h>
 #include <cmath>
 
-#include <GL\glew.h>
-#include <GLFW\glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 
-#include <glm\glm.hpp>
-#include <glm\gtc\matrix_transform.hpp>
-#include <glm\gtc\type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 // Window dimensions
 const GLint WIDTH = 800, HEIGHT = 600;
@@ -23,28 +23,28 @@ float triIncrement = 0.0005f;
 float curAngle = 0.0f;
 
 // Vertex Shader code
-static const char* vShader = "                                                \n\
-#version 330                                                                  \n\
-                                                                              \n\
-layout (location = 0) in vec3 pos;											  \n\
-                                                                              \n\
-uniform mat4 model;                                                           \n\
-                                                                              \n\
-void main()                                                                   \n\
-{                                                                             \n\
-    gl_Position = model * vec4(0.4 * pos.x, 0.4 * pos.y, pos.z, 1.0);		  \n\
-}";
+static const char* vShader = R"(
+#version 330
+
+layout (location = 0) in vec3 pos;
+
+uniform mat4 model;
+
+void main()
+{
+    gl_Position = model * vec4(0.4 * pos.x, 0.4 * pos.y, pos.z, 1.0);
+})";
 
 // Fragment Shader
-static const char* fShader = "                                                \n\
-#version 330                                                                  \n\
-                                                                              \n\
-out vec4 colour;                                                               \n\
-                                                                              \n\
-void main()                                                                   \n\
-{                                                                             \n\
-    colour = vec4(1.0, 0.0, 0.0, 1.0);                                         \n\
-}";
+static const char* fShader = R"(
+#version 330
+
+out vec4 colour;
+
+void main()
+{
+    colour = vec4(1.0, 0.0, 0.0, 1.0);
+})";
 
 void CreateTriangle()
 {
