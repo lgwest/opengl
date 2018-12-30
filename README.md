@@ -1,16 +1,21 @@
-# From the course "Graphics with mordern OpenGL"
+# From the course "Computer Graphics with modern OpenGL"
 
-At www.udemy.com, adapted to linux (Ubuntu 18:04) using cmake, 
-instead of using visual studio as don in the course.
+At www.udemy.com, modified for linux (Ubuntu 18:04) using cmake.
 
 ## Section 1 Introduction
 
-I skip this on linux
-* download glew at sourceforge
-* downloads glfw from www.glfw.org
-
-Instead I do 
+Install the needed libraries 
 * sudo apt-get install libglew2.0 libglew-dev
 * sudo apt-get install libglfw3 libglfw3-dev
+* sudo apt-get install libglm-dev
 
 And let cmake find them
+
+#### A note about cmake find_package() 
+CMake Find Modules (FindXyz.cmake files) are deprecated in favour of
+Package Config files (usually named XyzConfig.cmake). 
+Package Config files are shipped and maintained by the package they are intended to find.
+See glmConfig.cmake for an example.
+
+CMake's find_package() command has two modes: Module mode (legacy, using Find modules) 
+and Config mode (preferred, using Package Config files)
