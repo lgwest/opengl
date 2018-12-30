@@ -8,10 +8,12 @@ Install the needed libraries
 * sudo apt-get install libglew2.0 libglew-dev
 * sudo apt-get install libglfw3 libglfw3-dev
 * sudo apt-get install libglm-dev
+* sudo apt-get install pkg-config
 
 And let cmake find them
 
 #### A note about cmake find_package() 
+_from so_
 CMake Find Modules (FindXyz.cmake files) are deprecated in favour of
 Package Config files (usually named XyzConfig.cmake). 
 Package Config files are shipped and maintained by the package they are intended to find.

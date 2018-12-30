@@ -13,7 +13,7 @@ message("GLFW_LIBRARIES is ${GLFW_LIBRARIES}")
 message("GLFW_STATIC_LIBRARIES is ${GLFW_STATIC_LIBRARIES}")
 
 # find OpenGL
-#set(GL_PREFERENCE GLVND)
+set(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)
 message("OPENGL_INCLUDE_DIRS is ${OPENGL_INCLUDE_DIRS}")
 message("OPENGL_LIBRARIES is ${OPENGL_LIBRARIES}")
@@ -21,5 +21,5 @@ message("OPENGL_LIBRARIES is ${OPENGL_LIBRARIES}")
 find_package(glm REQUIRED)
 message("glm_INCLUDE_DIRS")
 
-add_subdirectory(1-beginner)
+add_subdirectory(1-introduction)
 add_subdirectory(2-beginner)
