@@ -7,22 +7,22 @@ ${GLWF_INCLUDE_DIRS}
 ${GLM_INCLUDE_DIRS}
 )
 
-add_executable(2-triangle triangle.cpp)
-target_link_libraries(2-triangle
+add_executable(2-1-triangle 2-1-triangle.cpp)
+target_link_libraries(2-1-triangle
 ${OPENGL_LIBRARIES} 
 ${GLEW_LIBRARIES} 
 ${GLFW_LIBRARIES}
 )
 
-add_executable(2-uniform uniform.cpp)
-target_link_libraries(2-uniform
+add_executable(2-2-uniform 2-2-uniform.cpp)
+target_link_libraries(2-2-uniform
 ${OPENGL_LIBRARIES}
 ${GLEW_LIBRARIES}
 ${GLFW_LIBRARIES}
 )
 
-add_executable(2-translate translate.cpp)
-target_link_libraries(2-translate
+add_executable(2-3-translate 2-3-translate.cpp)
+target_link_libraries(2-3-translate
 ${OPENGL_LIBRARIES}
 ${GLEW_LIBRARIES}
 ${GLFW_LIBRARIES}
