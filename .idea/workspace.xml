@@ -5,6 +5,7 @@
       <config projectName="Project" targetName="2-5-scale" />
       <config projectName="Project" targetName="1-beginner" />
       <config projectName="Project" targetName="3-camera" />
+      <config projectName="Project" targetName="4-3-diffuse" />
       <config projectName="Project" targetName="2-8-projections" />
       <config projectName="Project" targetName="2-1-triangle" />
       <config projectName="Project" targetName="2-7-indexing" />
@@ -23,7 +24,29 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e72d6f-7217-4299-9704-6f1acf56feda" name="Default Changelist" comment="Merge branch 'master' of https://github.com/lgwest/opengl&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;CMakeLists.txt&#10;#&#9;README.md" />
+    <list default="true" id="a8e72d6f-7217-4299-9704-6f1acf56feda" name="Default Changelist" comment="Merge branch 'master' of https://github.com/lgwest/opengl&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;CMakeLists.txt&#10;#&#9;README.md">
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Camera.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Camera.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Light.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Light.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Mesh.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Mesh.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shader.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shaders/shader.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shaders/shader.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Texture.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Texture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Textures/brick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Textures/dirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Window.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Window.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-intermediate/4-3-diffuse/stb_image.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-intermediate/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/4-intermediate/CMakeLists.txt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,14 +57,91 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/4-intermediate/4-2-ambient/main.cpp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Camera.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="105">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Light.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
               <folding>
                 <element signature="e#34#52#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Mesh.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Window.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shader.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Texture.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shader.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Texture.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -74,16 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/2-beginner/translate.cpp" />
-        <option value="$PROJECT_DIR$/2-beginner/uniform.cpp" />
-        <option value="$PROJECT_DIR$/2-beginner/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Mesh.h" />
-        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Window.h" />
-        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.cpp" />
-        <option value="$PROJECT_DIR$/2-beginner/2-2-uniform.cpp" />
-        <option value="$PROJECT_DIR$/2-beginner/2-3-translate.cpp" />
-        <option value="$PROJECT_DIR$/2-beginner/2-4-rotate.cpp" />
         <option value="$PROJECT_DIR$/2-beginner/2-5-scale.cpp" />
         <option value="$PROJECT_DIR$/2-beginner/2-6-interpolation.cpp" />
         <option value="$PROJECT_DIR$/2-beginner/2-7-indexing.cpp" />
@@ -114,7 +204,6 @@
         <option value="$PROJECT_DIR$/4-intermediate/4-1-textures/Shader.cpp" />
         <option value="$PROJECT_DIR$/4-intermediate/4-1-textures/Camera.cpp" />
         <option value="$PROJECT_DIR$/4-intermediate/4-1-textures/main.cpp" />
-        <option value="$PROJECT_DIR$/4-intermediate/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/4-intermediate/4-2-ambient/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/4-intermediate/4-2-ambient/Camera.h" />
         <option value="$PROJECT_DIR$/4-intermediate/4-2-ambient/Light.h" />
@@ -125,6 +214,17 @@
         <option value="$PROJECT_DIR$/4-intermediate/4-2-ambient/Shader.cpp" />
         <option value="$PROJECT_DIR$/4-intermediate/4-2-ambient/Texture.cpp" />
         <option value="$PROJECT_DIR$/4-intermediate/4-2-ambient/main.cpp" />
+        <option value="$PROJECT_DIR$/4-intermediate/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Camera.h" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Light.h" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Mesh.h" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Window.h" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shader.h" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Texture.h" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shader.cpp" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/Texture.cpp" />
+        <option value="$PROJECT_DIR$/4-intermediate/4-3-diffuse/main.cpp" />
       </list>
     </option>
   </component>
@@ -157,7 +257,7 @@
               <item name="opengl" type="b2602c69:ProjectViewProjectNode" />
               <item name="opengl" type="462c0819:PsiDirectoryNode" />
               <item name="4-intermediate" type="462c0819:PsiDirectoryNode" />
-              <item name="4-2-ambient" type="462c0819:PsiDirectoryNode" />
+              <item name="4-3-diffuse" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -184,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.4-2-ambient">
+  <component name="RunManager" selected="Application.4-3-diffuse">
     <configuration name="1-beginner" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1-beginner" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1-beginner">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -250,6 +350,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="4-3-diffuse" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="4-3-diffuse" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="4-3-diffuse">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.1-beginner" />
       <item itemvalue="Application.2-1-triangle" />
@@ -264,6 +369,7 @@
       <item itemvalue="Application.3-camera" />
       <item itemvalue="Application.4-1-textures" />
       <item itemvalue="Application.4-2-ambient" />
+      <item itemvalue="Application.4-3-diffuse" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -279,29 +385,29 @@
       <workItem from="1545824073597" duration="192000" />
       <workItem from="1545824333174" duration="9524000" />
       <workItem from="1546162375714" duration="3954000" />
-      <workItem from="1546176945716" duration="19348000" />
+      <workItem from="1546176945716" duration="20465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33018000" />
+    <option name="totallyTimeSpent" value="34135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16879624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16879624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24262735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24262735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39919356" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32171583" />
+      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.32171583" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -317,85 +423,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/include/GL/glew.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="1944" column="8" selection-start-line="1944" selection-start-column="8" selection-end-line="1944" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-beginner/2-5-scale.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="237" selection-start-line="237" selection-end-line="237" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-beginner/2-6-interpolation.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="241" column="26" selection-start-line="241" selection-start-column="26" selection-end-line="241" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-beginner/2-7-indexing.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="256" column="26" selection-start-line="256" selection-start-column="26" selection-end-line="256" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-beginner/2-8-projections.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="246" column="9" selection-start-line="246" selection-start-column="9" selection-end-line="246" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="87" column="15" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/current_dir.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/current_dir.h.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3-camera/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -608,13 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4-intermediate/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4-intermediate/4-2-ambient/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -690,8 +710,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/4-intermediate/4-2-ambient/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="409">
+          <caret line="133" column="27" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
+          <folding>
+            <element signature="e#34#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Camera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Light.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Mesh.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Window.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Texture.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Shader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/Texture.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-intermediate/4-3-diffuse/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
           <folding>
             <element signature="e#34#52#0" expanded="true" />
           </folding>
