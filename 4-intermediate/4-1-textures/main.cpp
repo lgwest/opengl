@@ -5,18 +5,20 @@
 #include <cmath>
 #include <vector>
 
-#include <GL\glew.h>
-#include <GLFW\glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 
-#include <glm\glm.hpp>
-#include <glm\gtc\matrix_transform.hpp>
-#include <glm\gtc\type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 #include "Window.h"
 #include "Mesh.h"
 #include "Shader.h"
 #include "Camera.h"
 #include "Texture.h"
+
+#include "current_dir.h"
 
 const float toRadians = 3.14159265f / 180.0f;
 
@@ -32,10 +34,10 @@ GLfloat deltaTime = 0.0f;
 GLfloat lastTime = 0.0f;
 
 // Vertex Shader
-static const char* vShader = "Shaders/shader.vert";
+static const char* vShader = CURRENT_DIR "Shaders/shader.vert";
 
 // Fragment Shader
-static const char* fShader = "Shaders/shader.frag";
+static const char* fShader = CURRENT_DIR "Shaders/shader.frag";
 
 void CreateObjects() 
 {
@@ -80,9 +82,9 @@ int main()
 
 	camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f, 5.0f, 0.5f);
 
-	brickTexture = Texture("Textures/brick.png");
+	brickTexture = Texture(CURRENT_DIR "Textures/brick.png");
 	brickTexture.LoadTexture();
-	dirtTexture = Texture("Textures/dirt.png");
+	dirtTexture = Texture(CURRENT_DIR "Textures/dirt.png");
 	dirtTexture.LoadTexture();
 
 	GLuint uniformProjection = 0, uniformModel = 0, uniformView = 0;
