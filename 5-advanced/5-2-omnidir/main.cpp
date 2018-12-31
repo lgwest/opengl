@@ -5,12 +5,12 @@
 #include <cmath>
 #include <vector>
 
-#include <GL\glew.h>
-#include <GLFW\glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 
-#include <glm\glm.hpp>
-#include <glm\gtc\matrix_transform.hpp>
-#include <glm\gtc\type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 #include "CommonValues.h"
 
@@ -208,7 +208,8 @@ void DirectionalShadowMapPass(DirectionalLight* light)
 	glClear(GL_DEPTH_BUFFER_BIT);
 
 	uniformModel = directionalShadowShader.GetModelLocation();
-	directionalShadowShader.SetDirectionalLightTransform(&light->CalculateLightTransform());
+	auto tmp = light->CalculateLightTransform();
+	directionalShadowShader.SetDirectionalLightTransform(&tmp);
 
 	directionalShadowShader.Validate();
 	RenderScene();
@@ -263,7 +264,8 @@ void RenderPass(glm::mat4 projectionMatrix, glm::mat4 viewMatrix)
 	shaderList[0].SetDirectionalLight(&mainLight);
 	shaderList[0].SetPointLights(pointLights, pointLightCount, 3, 0);
 	shaderList[0].SetSpotLights(spotLights, spotLightCount, 3 + pointLightCount, pointLightCount);
-	shaderList[0].SetDirectionalLightTransform(&mainLight.CalculateLightTransform());
+	auto tmp = mainLight.CalculateLightTransform();
+	shaderList[0].SetDirectionalLightTransform(&tmp);
 
 	mainLight.GetShadowMap()->Read(GL_TEXTURE2);
 

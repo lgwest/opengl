@@ -1,3 +1,4 @@
+#include "OmniShadowMap.cpp"
 #include "PointLight.h"
 
 
