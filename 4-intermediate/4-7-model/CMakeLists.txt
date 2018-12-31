@@ -1,4 +1,4 @@
-project(4-)
+project(4-7-model)
 
 configure_file(${CONFIG_DIR}/current_dir.h.in ${CMAKE_CURRENT_SOURCE_DIR}/current_dir.h)
 
