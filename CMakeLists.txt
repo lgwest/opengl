@@ -22,6 +22,10 @@ message("OPENGL_LIBRARIES is ${OPENGL_LIBRARIES}")
 find_package(glm REQUIRED)
 message("glm_INCLUDE_DIRS")
 
+find_package(assimp REQUIRED)
+message("assimp_INCLUDE_DIRS is ${assimp_INCLUDE_DIRS}")
+message("assimp_LIBRARIES is ${assimp_LIBRARIES}")
+
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CONFIG_DIR ${CMAKE_CURRENT_SOURCE_DIR}/config)
 

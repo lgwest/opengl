@@ -39,5 +39,6 @@ target_link_libraries(${PROJECT_NAME}
         ${OPENGL_LIBRARIES}
         ${GLEW_LIBRARIES}
         ${GLFW_LIBRARIES}
+        assimp
         )
 
