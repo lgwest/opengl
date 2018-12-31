@@ -112,7 +112,7 @@ int main()
 		uniformProjection = shaderList[0].GetProjectionLocation();
 		uniformView = shaderList[0].GetViewLocation();
 
-		glm::mat4 model;	
+		glm::mat4 model(1);
 
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, -2.5f));
 		model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
@@ -122,7 +122,7 @@ int main()
 		brickTexture.UseTexture();
 		meshList[0]->RenderMesh();
 
-		model = glm::mat4();
+		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(0.0f, 1.0f, -2.5f));
 		model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
