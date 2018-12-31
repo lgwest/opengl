@@ -25,7 +25,7 @@ uniform float xMove;
 
 void main()
 {
-    gl_Position = vec4(0.4 * pos.x + xMove, 0.4 * pos.y, pos.z, 1.0);
+    gl_Position = vec4( pos.x + xMove,  pos.y, pos.z, 1.0);
 })";
 
 // Fragment Shader
@@ -36,7 +36,7 @@ out vec4 colour;
 
 void main()
 {
-    colour = vec4(1.0, 0.0, 0.0, 1.0);
+    colour = vec4(0.0, 1.0, 0.0, 1.0);
 })";
 
 void CreateTriangle()
