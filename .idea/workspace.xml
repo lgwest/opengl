@@ -22,17 +22,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8e72d6f-7217-4299-9704-6f1acf56feda" name="Default Changelist" comment="Merge branch 'master' of https://github.com/lgwest/opengl&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;CMakeLists.txt&#10;#&#9;README.md">
-      <change afterPath="$PROJECT_DIR$/3-camera/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-beginner/2-9-cleanup/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-9-cleanup/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-camera/Camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/3-camera/Camera.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-camera/Camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/3-camera/Camera.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-camera/Mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/3-camera/Mesh.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-camera/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/3-camera/Shader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-camera/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/3-camera/Shader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-camera/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/3-camera/Window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-camera/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/3-camera/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-camera/Mesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/3-camera/Mesh.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-camera/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/3-camera/Window.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,37 +37,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/3-camera/current_dir.h">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3-camera/Camera.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3-camera/Camera.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/3-camera/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="-510">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -85,7 +55,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3-camera/Mesh.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -98,19 +72,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3-camera/Window.h">
+        <entry file="file://$PROJECT_DIR$/3-camera/Shader.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="421">
+              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <folding>
+                <element signature="e#14#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3-camera/Shader.h">
+        <entry file="file://$PROJECT_DIR$/3-camera/stb_image.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="-6435" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3-camera/Window.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3-camera/Window.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding>
                 <element signature="e#14#32#0" expanded="true" />
               </folding>
@@ -121,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3-camera/Shader.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="405">
+              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -131,10 +124,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3-camera/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="e#14#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,6 +146,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>mat4</find>
       <find>\</find>
     </findStrings>
     <replaceStrings>
@@ -170,7 +167,6 @@
         <option value="$PROJECT_DIR$/2-beginner/uniform.cpp" />
         <option value="$PROJECT_DIR$/2-beginner/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Mesh.h" />
-        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h" />
         <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Window.h" />
         <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.cpp" />
         <option value="$PROJECT_DIR$/2-beginner/2-2-uniform.cpp" />
@@ -189,10 +185,13 @@
         <option value="$PROJECT_DIR$/3-camera/Camera.h" />
         <option value="$PROJECT_DIR$/3-camera/Mesh.h" />
         <option value="$PROJECT_DIR$/3-camera/Window.h" />
-        <option value="$PROJECT_DIR$/3-camera/Shader.h" />
         <option value="$PROJECT_DIR$/3-camera/Shader.cpp" />
         <option value="$PROJECT_DIR$/3-camera/Camera.cpp" />
         <option value="$PROJECT_DIR$/3-camera/main.cpp" />
+        <option value="$PROJECT_DIR$/3-camera/Mesh.cpp" />
+        <option value="$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h" />
+        <option value="$PROJECT_DIR$/3-camera/Shader.h" />
+        <option value="$PROJECT_DIR$/3-camera/Window.cpp" />
       </list>
     </option>
   </component>
@@ -340,22 +339,23 @@
       <workItem from="1545824073597" duration="192000" />
       <workItem from="1545824333174" duration="9524000" />
       <workItem from="1546162375714" duration="3954000" />
-      <workItem from="1546176945716" duration="14419000" />
+      <workItem from="1546176945716" duration="15296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28089000" />
+    <option name="totallyTimeSpent" value="28966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="129" y="27" width="1400" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18537666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18537666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24327958" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24327958" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39919356" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -510,16 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="e#14#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -586,6 +576,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/3-camera/Camera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/3-camera/Camera.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -593,24 +590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3-camera/Mesh.cpp">
+    <entry file="file://$PROJECT_DIR$/3-camera/current_dir.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/3-camera/Mesh.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-camera/Window.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-camera/Shader.h">
+    <entry file="file://$PROJECT_DIR$/2-beginner/2-9-cleanup/Shader.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
@@ -620,30 +603,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/3-camera/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-camera/Mesh.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-camera/Mesh.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/3-camera/Shader.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="405">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3-camera/Camera.cpp">
+    <entry file="file://$PROJECT_DIR$/3-camera/Shader.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
-          <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="e#14#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3-camera/main.cpp">
+    <entry file="file://$PROJECT_DIR$/3-camera/stb_image.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="-6435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-camera/Window.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#14#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-camera/Window.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
         </state>
       </provider>
     </entry>

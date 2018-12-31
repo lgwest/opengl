@@ -5,9 +5,8 @@ Window::Window()
 	width = 800;
 	height = 600;
 
-	for(size_t i = 0; i < 1024; i++)
-	{
-		keys[i] = 0;
+	for (bool &key : keys) {
+		key = false;
 	}
 }
 
@@ -16,9 +15,8 @@ Window::Window(GLint windowWidth, GLint windowHeight)
 	width = windowWidth;
 	height = windowHeight;
 
-	for (size_t i = 0; i < 1024; i++)
-	{
-		keys[i] = 0;
+	for (bool &key : keys) {
+		key = false;
 	}
 }
 
@@ -41,7 +39,7 @@ int Window::Initialise()
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
 	// Create the window
-	mainWindow = glfwCreateWindow(width, height, "Test Window", NULL, NULL);
+	mainWindow = glfwCreateWindow(width, height, "Test Window", nullptr, nullptr);
 	if (!mainWindow)
 	{
 		printf("Error creating GLFW window!");
@@ -77,6 +75,8 @@ int Window::Initialise()
 	glViewport(0, 0, bufferWidth, bufferHeight);
 
 	glfwSetWindowUserPointer(mainWindow, this);
+
+	return 0;
 }
 
 void Window::createCallbacks()
@@ -101,7 +101,7 @@ GLfloat Window::getYChange()
 
 void Window::handleKeys(GLFWwindow* window, int key, int code, int action, int mode)
 {
-	Window* theWindow = static_cast<Window*>(glfwGetWindowUserPointer(window));
+	auto * theWindow = static_cast<Window*>(glfwGetWindowUserPointer(window));
 
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 	{
@@ -123,7 +123,7 @@ void Window::handleKeys(GLFWwindow* window, int key, int code, int action, int m
 
 void Window::handleMouse(GLFWwindow* window, double xPos, double yPos)
 {
-	Window* theWindow = static_cast<Window*>(glfwGetWindowUserPointer(window));
+	auto * theWindow = static_cast<Window*>(glfwGetWindowUserPointer(window));
 
 	if (theWindow->mouseFirstMoved)
 	{
