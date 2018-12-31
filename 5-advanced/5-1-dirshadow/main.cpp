@@ -26,6 +26,8 @@
 
 #include "Model.h"
 
+#include "current_dir.h"
+
 const float toRadians = 3.14159265f / 180.0f;
 
 GLuint uniformProjection = 0, uniformModel = 0, uniformView = 0, uniformEyePosition = 0,
@@ -63,10 +65,10 @@ GLfloat lastTime = 0.0f;
 GLfloat blackhawkAngle = 0.0f;
 
 // Vertex Shader
-static const char* vShader = "Shaders/shader.vert";
+static const char* vShader = CURRENT_DIR"Shaders/shader.vert";
 
 // Fragment Shader
-static const char* fShader = "Shaders/shader.frag";
+static const char* fShader = CURRENT_DIR"Shaders/shader.frag";
 
 void calcAverageNormals(unsigned int * indices, unsigned int indiceCount, GLfloat * vertices, unsigned int verticeCount, 
 						unsigned int vLength, unsigned int normalOffset)
@@ -146,12 +148,12 @@ void CreateShaders()
 	shader1->CreateFromFiles(vShader, fShader);
 	shaderList.push_back(*shader1);
 
-	directionalShadowShader.CreateFromFiles("Shaders/directional_shadow_map.vert", "Shaders/directional_shadow_map.frag");
+	directionalShadowShader.CreateFromFiles(CURRENT_DIR"Shaders/directional_shadow_map.vert", "Shaders/directional_shadow_map.frag");
 }
 
 void RenderScene()
 {
-	glm::mat4 model;
+	glm::mat4 model(1);
 
 	model = glm::translate(model, glm::vec3(0.0f, 0.0f, -2.5f));
 	glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
@@ -159,21 +161,21 @@ void RenderScene()
 	shinyMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
 	meshList[0]->RenderMesh();
 
-	model = glm::mat4();
+	model = glm::mat4(1);
 	model = glm::translate(model, glm::vec3(0.0f, 4.0f, -2.5f));
 	glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 	dirtTexture.UseTexture();
 	dullMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
 	meshList[1]->RenderMesh();
 
-	model = glm::mat4();
+	model = glm::mat4(1);
 	model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f));
 	glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 	dirtTexture.UseTexture();
 	shinyMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
 	meshList[2]->RenderMesh();
 
-	model = glm::mat4();
+	model = glm::mat4(1);
 	model = glm::translate(model, glm::vec3(-7.0f, 0.0f, 10.0f));
 	model = glm::scale(model, glm::vec3(0.006f, 0.006f, 0.006f));
 	glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
@@ -186,7 +188,7 @@ void RenderScene()
 		blackhawkAngle = 0.1f;
 	}
 
-	model = glm::mat4();
+	model = glm::mat4(1);
 	model = glm::rotate(model, -blackhawkAngle * toRadians, glm::vec3(0.0f, 1.0f, 0.0f));
 	model = glm::translate(model, glm::vec3(-8.0f, 2.0f, 0.0f));
 	model = glm::rotate(model, -20.0f * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
@@ -263,21 +265,21 @@ int main()
 
 	camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -60.0f, 0.0f, 5.0f, 0.5f);
 
-	brickTexture = Texture("Textures/brick.png");
+	brickTexture = Texture(CURRENT_DIR"Textures/brick.png");
 	brickTexture.LoadTextureA();
-	dirtTexture = Texture("Textures/dirt.png");
+	dirtTexture = Texture(CURRENT_DIR"Textures/dirt.png");
 	dirtTexture.LoadTextureA();
-	plainTexture = Texture("Textures/plain.png");
+	plainTexture = Texture(CURRENT_DIR"Textures/plain.png");
 	plainTexture.LoadTextureA();
 
 	shinyMaterial = Material(4.0f, 256);
 	dullMaterial = Material(0.3f, 4);
 
 	xwing = Model();
-	xwing.LoadModel("Models/x-wing.obj");
+	xwing.LoadModel(CURRENT_DIR"Models/x-wing.obj");
 
 	blackhawk = Model();
-	blackhawk.LoadModel("Models/uh60.obj");
+	blackhawk.LoadModel(CURRENT_DIR"Models/uh60.obj");
 
 	mainLight = DirectionalLight(2048, 2048,
 								1.0f, 1.0f, 1.0f, 
