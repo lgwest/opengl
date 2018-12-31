@@ -1,7 +1,5 @@
 project(2-9-cleanup)
 
-include_directories(${CMAKE_CURRENT_SRC_DIR})
-
 configure_file(${CONFIG_DIR}/current_dir.h.in ${CMAKE_CURRENT_SOURCE_DIR}/current_dir.h)
 
 add_executable(${PROJECT_NAME}

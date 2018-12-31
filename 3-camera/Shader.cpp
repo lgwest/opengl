@@ -1,4 +1,5 @@
 #include "Shader.h"
+#include <cstring>
 
 Shader::Shader()
 {
@@ -32,7 +33,7 @@ std::string Shader::ReadFile(const char* fileLocation)
 		return "";
 	}
 
-	std::string line = "";
+	std::string line;
 	while (!fileStream.eof())
 	{
 		std::getline(fileStream, line);
@@ -63,7 +64,7 @@ void Shader::CompileShader(const char* vertexCode, const char* fragmentCode)
 	glGetProgramiv(shaderID, GL_LINK_STATUS, &result);
 	if (!result)
 	{
-		glGetProgramInfoLog(shaderID, sizeof(eLog), NULL, eLog);
+		glGetProgramInfoLog(shaderID, sizeof(eLog), nullptr, eLog);
 		printf("Error linking program: '%s'\n", eLog);
 		return;
 	}
@@ -72,7 +73,7 @@ void Shader::CompileShader(const char* vertexCode, const char* fragmentCode)
 	glGetProgramiv(shaderID, GL_VALIDATE_STATUS, &result);
 	if (!result)
 	{
-		glGetProgramInfoLog(shaderID, sizeof(eLog), NULL, eLog);
+		glGetProgramInfoLog(shaderID, sizeof(eLog), nullptr, eLog);
 		printf("Error validating program: '%s'\n", eLog);
 		return;
 	}
@@ -132,7 +133,7 @@ void Shader::AddShader(GLuint theProgram, const char* shaderCode, GLenum shaderT
 	glGetShaderiv(theShader, GL_COMPILE_STATUS, &result);
 	if (!result)
 	{
-		glGetShaderInfoLog(theShader, sizeof(eLog), NULL, eLog);
+		glGetShaderInfoLog(theShader, sizeof(eLog), nullptr, eLog);
 		printf("Error compiling the %d shader: '%s'\n", shaderType, eLog);
 		return;
 	}
