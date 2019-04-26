@@ -1,11 +1,30 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.14)
 
-# find GLEW
-find_package(GLEW REQUIRED)
+set(GLEW_TAG "")
+set(GLFW_TAG 3.3)
+
+include(FetchContent)
+
+# Fetch GLEW
+FetchContent_Declare(
+	glew
+	GIT_REPOSITORY https://github.com/nigels-com/glew.git
+	GIT_TAG ${GLEW_TAG}
+)
+FetchContent_MakeAvaiable(glew)
+
+#find_package(GLEW REQUIRED)
 message("GLEW_INCLUDE_DIRS is ${GLEW_INCLUDE_DIRS}")
 message("GLEW_LIBRARIES is ${GLEW_LIBRARIES}")
 
-# find GLFW
+# fetch GLFW
+FetchContent_Declare(
+	glfw
+	GIT_REPOSITORY https://github.com/nigels-com/glew.git
+	GIT_TAG ${GLEW_TAG}
+)
+FetchContent_MakeAvaiable(glew)
+
 find_package(PkgConfig REQUIRED)
 pkg_search_module(GLFW REQUIRED glfw3)
 message("GLFW_INCLUDE_DIRS is ${GLFW_INCLUDE_DIRS}")
