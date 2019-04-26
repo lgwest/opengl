@@ -4,12 +4,13 @@ At www.udemy.com, modified for linux (Ubuntu 18:04) using cmake.
 
 ## Section 1 Introduction
 
-Install the needed libraries 
- sudo apt-get install libglew2.0 libglew-dev
- sudo apt-get install libglfw3 libglfw3-dev
- sudo apt-get install libglm-dev
- sudo apt-get install pkg-config
- sudo apt-get install libasimp-dev
+Install the needed libraries:
+
+ sudo apt-get install libglew2.0 libglew-dev  
+ sudo apt-get install libglfw3 libglfw3-dev  
+ sudo apt-get install libglm-dev  
+ sudo apt-get install pkg-config 
+ sudo apt-get install libasimp-dev  
 
 And let cmake find them
 
