@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.14)
 
 set(GLEW_TAG c14a7a1) # git hash: May 1, 2019
 set(GLFW_TAG 3.3)
+set(GLM_TAG 0.9.9.5)
 
 include(FetchContent)
 
@@ -31,12 +32,18 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(glfwlib)
 
-
 set(GLFW_INCLUDE_DIRS ${glfwlib_SOURCE_DIR}/include)
 set(GLFW_LIBRARIES glfw)
 
-message("GLFW_INCLUDE_DIRS is ${GLFW_INCLUDE_DIRS}")
-message("GLFW_LIBRARIES is ${GLFW_LIBRARIES}")
+# Fetch GLM
+FetchContent_Declare(
+	glmlib
+	GIT_REPOSITORY https://github.com/g-truc/glm.git
+	GIT_TAG ${GLM_TAG}
+)
+FetchContent_MakeAvailable(glmlib)
+set(GLM_INCLUDE_DIRS ${glmlib_SOURCE_DIR})
+
 
 # find OpenGL
 set(OpenGL_GL_PREFERENCE GLVND)
@@ -57,7 +64,7 @@ set(CONFIG_DIR ${CMAKE_CURRENT_SOURCE_DIR}/config)
 link_directories(${CMAKE_BINARY_DIR}/lib)
 
 add_subdirectory(1-introduction)
-#add_subdirectory(2-beginner)
+add_subdirectory(2-beginner)
 #add_subdirectory(3-camera)
 #add_subdirectory(4-intermediate)
 #add_subdirectory(5-advanced)
