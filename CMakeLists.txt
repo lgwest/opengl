@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.14)
 set(GLEW_TAG c14a7a1) # git hash: May 1, 2019
 set(GLFW_TAG 3.3)
 set(GLM_TAG 0.9.9.5)
+set(ASSIMP_TAG v4.1.0)
 
 include(FetchContent)
 
@@ -51,14 +52,22 @@ find_package(OpenGL REQUIRED)
 message("OPENGL_INCLUDE_DIR is ${OPENGL_INCLUDE_DIR}")
 message("OPENGL_LIBRARIES is ${OPENGL_LIBRARIES}")
 
-# find glm
-#find_package(glm REQUIRED)
-#message("glm_INCLUDE_DIRS")
+
+# fetch ASSIMP
+FetchContent_Declare(
+	assimplib
+	GIT_REPOSITORY https://github.com/assimp/assimp.git
+	GIT_TAG ${ASSIMP_TAG}
+)
+FetchContent_MakeAvailable(assimplib)
+set(ASSIMP_INCLUDE_DIRS ${assimplib_SOURCE_DIR}/include ${assimplib_BINARY_DIR}/include)
+set(ASSIMP_LIBRARIES assimp)
+
 
 #find_package(assimp REQUIRED)
 #message("assimp_INCLUDE_DIRS is ${assimp_INCLUDE_DIRS}")
 #message("assimp_LIBRARIES is ${assimp_LIBRARIES}")
-include_directories(${GLM_INCLUDE_DIRS})
+include_directories(${GLM_INCLUDE_DIRS} ${ASSIMP_INCLUDE_DIRS})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CONFIG_DIR ${CMAKE_CURRENT_SOURCE_DIR}/config)
 link_directories(${CMAKE_BINARY_DIR}/lib)
@@ -66,5 +75,5 @@ link_directories(${CMAKE_BINARY_DIR}/lib)
 add_subdirectory(1-introduction)
 add_subdirectory(2-beginner)
 add_subdirectory(3-camera)
-#add_subdirectory(4-intermediate)
+add_subdirectory(4-intermediate)
 #add_subdirectory(5-advanced)
