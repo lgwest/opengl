@@ -2,4 +2,5 @@ build/
 cmake-build-debug/
 open.gl*/
 pyglet/
+workspace.xml
 
