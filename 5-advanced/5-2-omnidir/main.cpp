@@ -148,9 +148,9 @@ void CreateShaders()
 	shaderList.push_back(*shader1);
 
 	directionalShadowShader = Shader();
-	directionalShadowShader.CreateFromFiles(CURRENT_DIR"Shaders/directional_shadow_map.vert", "Shaders/directional_shadow_map.frag");
+	directionalShadowShader.CreateFromFiles(CURRENT_DIR"Shaders/directional_shadow_map.vert", CURRENT_DIR "Shaders/directional_shadow_map.frag");
 	omniShadowShader = Shader();
-	omniShadowShader.CreateFromFiles(CURRENT_DIR"Shaders/omni_directional_shadow_map.vert", "Shaders/omni_directional_shadow_map.geom", "Shaders/omni_directional_shadow_map.frag");
+	omniShadowShader.CreateFromFiles(CURRENT_DIR"Shaders/omni_directional_shadow_map.vert", CURRENT_DIR "Shaders/omni_directional_shadow_map.geom", CURRENT_DIR "Shaders/omni_directional_shadow_map.frag");
 }
 
 void RenderScene()
@@ -293,21 +293,21 @@ int main()
 
 	camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -60.0f, 0.0f, 5.0f, 0.5f);
 
-	brickTexture = Texture("Textures/brick.png");
+	brickTexture = Texture(CURRENT_DIR "Textures/brick.png");
 	brickTexture.LoadTextureA();
-	dirtTexture = Texture("Textures/dirt.png");
+	dirtTexture = Texture(CURRENT_DIR "Textures/dirt.png");
 	dirtTexture.LoadTextureA();
-	plainTexture = Texture("Textures/plain.png");
+	plainTexture = Texture(CURRENT_DIR "Textures/plain.png");
 	plainTexture.LoadTextureA();
 
 	shinyMaterial = Material(4.0f, 256);
 	dullMaterial = Material(0.3f, 4);
 
 	xwing = Model();
-	xwing.LoadModel("Models/x-wing.obj");
+	xwing.LoadModel(CURRENT_DIR "Models/x-wing.obj");
 
 	blackhawk = Model();
-	blackhawk.LoadModel("Models/uh60.obj");
+	blackhawk.LoadModel(CURRENT_DIR "Models/uh60.obj");
 
 	mainLight = DirectionalLight(2048, 2048,
 								1.0f, 1.0f, 1.0f, 

@@ -65,10 +65,10 @@ GLfloat lastTime = 0.0f;
 GLfloat blackhawkAngle = 0.0f;
 
 // Vertex Shader
-static const char* vShader = CURRENT_DIR"Shaders/shader.vert";
+static const char* vShader = CURRENT_DIR "Shaders/shader.vert";
 
 // Fragment Shader
-static const char* fShader = CURRENT_DIR"Shaders/shader.frag";
+static const char* fShader = CURRENT_DIR "Shaders/shader.frag";
 
 void calcAverageNormals(unsigned int * indices, unsigned int indiceCount, GLfloat * vertices, unsigned int verticeCount, 
 						unsigned int vLength, unsigned int normalOffset)
@@ -148,7 +148,7 @@ void CreateShaders()
 	shader1->CreateFromFiles(vShader, fShader);
 	shaderList.push_back(*shader1);
 
-	directionalShadowShader.CreateFromFiles(CURRENT_DIR"Shaders/directional_shadow_map.vert", "Shaders/directional_shadow_map.frag");
+	directionalShadowShader.CreateFromFiles(CURRENT_DIR "Shaders/directional_shadow_map.vert", CURRENT_DIR "Shaders/directional_shadow_map.frag");
 }
 
 void RenderScene()
@@ -265,21 +265,21 @@ int main()
 
 	camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -60.0f, 0.0f, 5.0f, 0.5f);
 
-	brickTexture = Texture(CURRENT_DIR"Textures/brick.png");
+	brickTexture = Texture(CURRENT_DIR "Textures/brick.png");
 	brickTexture.LoadTextureA();
-	dirtTexture = Texture(CURRENT_DIR"Textures/dirt.png");
+	dirtTexture = Texture(CURRENT_DIR "Textures/dirt.png");
 	dirtTexture.LoadTextureA();
-	plainTexture = Texture(CURRENT_DIR"Textures/plain.png");
+	plainTexture = Texture(CURRENT_DIR "Textures/plain.png");
 	plainTexture.LoadTextureA();
 
 	shinyMaterial = Material(4.0f, 256);
 	dullMaterial = Material(0.3f, 4);
 
 	xwing = Model();
-	xwing.LoadModel(CURRENT_DIR"Models/x-wing.obj");
+	xwing.LoadModel(CURRENT_DIR "Models/x-wing.obj");
 
 	blackhawk = Model();
-	blackhawk.LoadModel(CURRENT_DIR"Models/uh60.obj");
+	blackhawk.LoadModel(CURRENT_DIR "Models/uh60.obj");
 
 	mainLight = DirectionalLight(2048, 2048,
 								1.0f, 1.0f, 1.0f, 
