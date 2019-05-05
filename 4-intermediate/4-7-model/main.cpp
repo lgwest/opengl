@@ -158,10 +158,10 @@ int main()
 	dullMaterial = Material(0.3f, 4);
 
 	xwing = Model();
-	xwing.LoadModel("Models/x-wing.obj");
+	xwing.LoadModel(CURRENT_DIR "Models/x-wing.obj");
 
 	blackhawk = Model();
-	blackhawk.LoadModel("Models/uh60.obj");
+	blackhawk.LoadModel(CURRENT_DIR "Models/uh60.obj");
 
 	mainLight = DirectionalLight(1.0f, 1.0f, 1.0f, 
 								0.3f, 0.6f,
