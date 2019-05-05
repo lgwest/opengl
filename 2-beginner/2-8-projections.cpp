@@ -6,8 +6,8 @@
 #include <GLFW/glfw3.h>
 
 #include <glm/glm.hpp>
-#include <glm/gtc\matrix_transform.hpp>
-#include <glm/gtc\type_ptr.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 // Window dimensions
 const GLint WIDTH = 800, HEIGHT = 600;
@@ -257,7 +257,7 @@ int main()
 
 		glUseProgram(shader);
 
-		glm::mat4 model;
+		glm::mat4 model(1);
 
 		model = glm::translate(model, glm::vec3(triOffset, 0.0f, -2.5f));
 		//model = glm::rotate(model, curAngle * toRadians, glm::vec3(0.0f, 1.0f, 0.0f));

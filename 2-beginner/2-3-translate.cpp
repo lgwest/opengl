@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <cstring>
 #include <cmath>
+#include <iostream>
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -150,7 +151,7 @@ int main()
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
 	// Create the window
-	GLFWwindow *mainWindow = glfwCreateWindow(WIDTH, HEIGHT, "2 - Translate", nullptr, nullptr);
+	GLFWwindow *mainWindow = glfwCreateWindow(WIDTH, HEIGHT, "Test Window", nullptr, nullptr);
 	if (!mainWindow)
 	{
 		printf("GLFW window creation failed!");
@@ -207,7 +208,7 @@ int main()
 
 		glUseProgram(shader);
 
-		glm::mat4 model;
+		glm::mat4 model(1); // must initialize to identity matrix on linux
 		model = glm::translate(model, glm::vec3(triOffset, triOffset, 0.0f));
 
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));

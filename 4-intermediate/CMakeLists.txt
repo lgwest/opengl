@@ -1,0 +1,7 @@
+add_subdirectory(4-1-textures)
+add_subdirectory(4-2-ambient)
+add_subdirectory(4-3-diffuse)
+add_subdirectory(4-4-specular)
+add_subdirectory(4-5-point)
+add_subdirectory(4-6-spot)
+add_subdirectory(4-7-model)

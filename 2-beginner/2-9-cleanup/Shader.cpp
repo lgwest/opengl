@@ -1,5 +1,5 @@
 #include "Shader.h"
-
+#include <cstring>
 Shader::Shader()
 {
 	shaderID = 0;

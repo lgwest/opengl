@@ -3,16 +3,17 @@
 #include <cmath>
 #include <vector>
 
-#include <GL\glew.h>
-#include <GLFW\glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 
-#include <glm\glm.hpp>
-#include <glm\gtc\matrix_transform.hpp>
-#include <glm\gtc\type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 #include "Window.h"
 #include "Mesh.h"
 #include "Shader.h"
+#include "current_dir.h"
 
 const float toRadians = 3.14159265f / 180.0f;
 
@@ -21,10 +22,10 @@ std::vector<Mesh*> meshList;
 std::vector<Shader> shaderList;
 
 // Vertex Shader
-static const char* vShader = "Shaders/shader.vert";
+static const char* vShader = CURRENT_DIR "Shaders/shader.vert";
 
 // Fragment Shader
-static const char* fShader = "Shaders/shader.frag";
+static const char* fShader = CURRENT_DIR "Shaders/shader.frag";
 
 void CreateObjects() 
 {
@@ -84,7 +85,7 @@ int main()
 		uniformModel = shaderList[0].GetModelLocation();
 		uniformProjection = shaderList[0].GetProjectionLocation();
 
-		glm::mat4 model;	
+		glm::mat4 model(1);
 
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, -2.5f));
 		model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
@@ -92,7 +93,7 @@ int main()
 		glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projection));
 		meshList[0]->RenderMesh();
 
-		model = glm::mat4();
+		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(0.0f, 1.0f, -2.5f));
 		model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));

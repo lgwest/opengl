@@ -216,7 +216,7 @@ int main()
 
 		glUseProgram(shader);
 
-		glm::mat4 model;
+		glm::mat4 model(1);
 		model = glm::translate(model, glm::vec3(triOffset, 0.0f, 0.0f));
 		model = glm::rotate(model, curAngle * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
 

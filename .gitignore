@@ -2,5 +2,6 @@ build/
 cmake-build-debug/
 open.gl*/
 pyglet/
+current_dir.h
 workspace.xml
 

@@ -1,13 +1,13 @@
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 #include <cmath>
 
-#include <GL\glew.h>
-#include <GLFW\glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 
-#include <glm\glm.hpp>
-#include <glm\gtc\matrix_transform.hpp>
-#include <glm\gtc\type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 // Window dimensions
 const GLint WIDTH = 800, HEIGHT = 600;
@@ -28,33 +28,33 @@ float maxSize = 0.8f;
 float minSize = 0.1f;
 
 // Vertex Shader code
-static const char* vShader = "                                                \n\
-#version 330                                                                  \n\
-                                                                              \n\
-layout (location = 0) in vec3 pos;											  \n\
-																			  \n\
-out vec4 vCol;																  \n\
-                                                                              \n\
-uniform mat4 model;                                                           \n\
-                                                                              \n\
-void main()                                                                   \n\
-{                                                                             \n\
-    gl_Position = model * vec4(pos, 1.0);									  \n\
-	vCol = vec4(clamp(pos, 0.0f, 1.0f), 1.0);								  \n\
-}";
+static const char* vShader = R"(
+#version 330
+
+layout (location = 0) in vec3 pos;
+
+out vec4 vCol;
+
+uniform mat4 model;
+
+void main()
+{
+    gl_Position = model * vec4(pos, 1.0);
+	vCol = vec4(clamp(pos, 0.0f, 1.0f), 1.0);
+})";
 
 // Fragment Shader
-static const char* fShader = "                                                \n\
-#version 330                                                                  \n\
-                                                                              \n\
-in vec4 vCol;																  \n\
-                                                                              \n\
-out vec4 colour;                                                              \n\
-                                                                              \n\
-void main()                                                                   \n\
-{                                                                             \n\
-    colour = vCol;															  \n\
-}";
+static const char* fShader = R"(
+#version 330
+
+in vec4 vCol;
+
+out vec4 colour;
+
+void main()
+{
+    colour = vCol;
+})";
 
 void CreateTriangle()
 {
@@ -71,7 +71,7 @@ void CreateTriangle()
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
 	glEnableVertexAttribArray(0);
 
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -98,7 +98,7 @@ void AddShader(GLuint theProgram, const char* shaderCode, GLenum shaderType)
 	glGetShaderiv(theShader, GL_COMPILE_STATUS, &result);
 	if (!result) 
 	{
-		glGetShaderInfoLog(theShader, 1024, NULL, eLog);
+		glGetShaderInfoLog(theShader, 1024, nullptr, eLog);
 		fprintf(stderr, "Error compiling the %d shader: '%s'\n", shaderType, eLog);
 		return;
 	}
@@ -126,7 +126,7 @@ void CompileShaders()
 	glGetProgramiv(shader, GL_LINK_STATUS, &result);
 	if (!result) 
 	{
-		glGetProgramInfoLog(shader, sizeof(eLog), NULL, eLog);
+		glGetProgramInfoLog(shader, sizeof(eLog), nullptr, eLog);
 		printf("Error linking program: '%s'\n", eLog);
 		return;
 	}
@@ -135,7 +135,7 @@ void CompileShaders()
 	glGetProgramiv(shader, GL_VALIDATE_STATUS, &result);
 	if (!result) 
 	{
-		glGetProgramInfoLog(shader, sizeof(eLog), NULL, eLog);
+		glGetProgramInfoLog(shader, sizeof(eLog), nullptr, eLog);
 		printf("Error validating program: '%s'\n", eLog);
 		return;
 	}
@@ -163,7 +163,7 @@ int main()
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
 	// Create the window
-	GLFWwindow *mainWindow = glfwCreateWindow(WIDTH, HEIGHT, "Test Window", NULL, NULL);
+	GLFWwindow *mainWindow = glfwCreateWindow(WIDTH, HEIGHT, "Test Window", nullptr, nullptr);
 	if (!mainWindow)
 	{
 		printf("GLFW window creation failed!");
@@ -239,7 +239,7 @@ int main()
 
 		glUseProgram(shader);
 
-		glm::mat4 model;
+		glm::mat4 model(1);
 
 		//model = glm::rotate(model, curAngle * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
 		//model = glm::translate(model, glm::vec3(triOffset, 0.0f, 0.0f));
